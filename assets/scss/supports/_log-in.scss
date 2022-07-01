@@ -1,0 +1,23 @@
+/** Log In */
+#login-form {
+  .login-username,
+  .login-password,
+   label {
+    color: $white;
+  }
+
+  #wppb-submit {
+    background: $red;
+  }
+
+  .login-register-lost-password {
+    a {
+      color: $red;
+    }
+  }
+}
+.wppb-sc-heading-before-reg-buttons {
+  h3 {
+    display: none;
+  }
+}

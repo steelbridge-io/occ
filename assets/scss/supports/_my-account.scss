@@ -1,0 +1,21 @@
+/** My Account */
+
+.user-page-link {
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: $white;
+  border-color: var(--tabs-active-border-color,transparent);
+  a {
+    background: $red;
+    color: $white;
+    padding: 0.9em 2.691em 0.9em 2.691em;
+  }
+}
+
+.my-account-btn {
+  a {
+    background: $red !important;
+    color: $white !important;
+  }
+}

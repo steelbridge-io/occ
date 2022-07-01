@@ -1,0 +1,45 @@
+/** Footer */
+
+.wpcf7-form.init {
+  .column.four-fifth.ftr-frm {
+    width: 60%;
+    padding: 0 7px 10px 0px;
+  }
+}
+
+@media (max-width: 1023.99px) {
+
+  .footer-content {
+    text-align: center;
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+    .ftr-scl {
+      text-align: center;
+    }
+  }
+
+  #Footer #block-8 {
+    margin-left: 0px !important;
+  }
+
+  #company {
+    text-align: center;
+  }
+
+  #quick-link {
+    text-align: center;
+  }
+
+  #stay-in-touch {
+    text-align: center;
+  }
+
+  .wpcf7-form.init {
+    .column.four-fifth.ftr-frm {
+      width: 100%;
+    }
+  }
+
+}

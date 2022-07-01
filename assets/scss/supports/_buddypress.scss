@@ -1,0 +1,21 @@
+/** BuddyPress */
+
+#buddypress {
+  background-color: rgba(0,0,0,0.9);
+  padding: 1.618em;
+}
+
+.buddypress-wrap.bp-dir-hori-nav:not(.bp-vertical-navs) nav:not(.tabbed-links) {
+  border: 1px solid $white-smoke;
+  box-shadow: none;
+}
+
+#object-nav {
+  ul {
+    li {
+      a {
+        color: $red;
+      }
+    }
+  }
+}

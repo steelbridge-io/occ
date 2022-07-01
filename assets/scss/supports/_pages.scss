@@ -1,0 +1,33 @@
+/** Pages */
+
+.home {
+  &.page {
+    #Top_bar {
+      background: transparent !important;
+    }
+  }
+}
+
+.page {
+  #Wrapper {
+    #Header_wrapper {
+      #Header {
+        #Top_bar {
+          background-color: $black !important;
+        }
+      }
+      #Subheader {
+        .container {
+          .column {
+            .title {
+              display: none;
+            }
+            .breadcrumbs {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

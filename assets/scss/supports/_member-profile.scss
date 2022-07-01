@@ -1,0 +1,62 @@
+/** Member Profile */
+
+#profile-data {
+  margin-bottom: 2.618em;
+  h3 {
+    color: $white;
+  }
+  label {
+    color: $white;
+  }
+  span {
+    color:$white;
+  }
+  .subnav {
+    a {
+      color: $red;
+    }
+  }
+}
+
+#item-body {
+  a {
+    color: $red;
+  }
+}
+
+#wppb-back-span {
+  .wppb-back {
+    padding: .5em 1.2em;
+    background: $red;
+    color: $white;
+  }
+}
+
+.buddypress-wrap.bp-dir-hori-nav:not(.bp-vertical-navs) nav:not(.tabbed-links) {
+  border: 1px solid $white;
+  box-shadow: none;
+}
+
+#object-nav {
+  ul {
+    li {
+      a {
+        color: $red;
+      }
+    }
+  }
+}
+
+.container-fluid.wppb-profile h3, .container-fluid.wppb-profile h3:first-child {
+  margin: 20px 0;
+  padding-top: 20px;
+  border-top: 1px solid #d2d2d2;
+}
+
+.card.demo-reel-card {
+  background: transparent;
+  border: none;
+  max-width: 500px;
+  margin: 0 0 0 0;
+  text-align: left;
+}

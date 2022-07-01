@@ -1,0 +1,57 @@
+/** Talent Grid */
+
+#card-container {
+  .talent-col {
+    margin: 1.618em auto;
+  }
+}
+
+.talent-card.card {
+  border: none;
+  img {
+    object-fit: cover;
+    height: 100%;
+    max-height: 250px;
+    min-height: 250px;
+  }
+  .card-body {
+    background-color: #6E0218;
+    color: $white;
+  }
+
+  .button-more {
+    background: #fff;
+    padding: 0.5em 2em;
+    a {
+      color: $black;
+    }
+  }
+}
+
+.wppb-facet-filter.wppb-facet-select,
+.wppb-facet-filter.wppb-facet-range {
+  h5 {
+    color: $white;
+  }
+  color: $white;
+}
+
+.wppb-ul-range-values.age {
+  color: $white;
+  padding: 0 0 .2em 0;
+}
+
+#wppb-facet-age {
+  width: 23%;
+  margin-left: .5em;
+}
+
+.search-label {
+  color: $white;
+  margin-left: 1.618em;
+}
+
+.wppb-faceted-list .ui-widget-header {
+  background-color: #6E0218 !important;
+  border-color: #6E0218 !important;
+}

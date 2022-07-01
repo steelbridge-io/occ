@@ -1,0 +1,48 @@
+/** Header */
+
+#header_cart {
+  color: $white !important;
+}
+
+.logo-main.scale-with-grid {
+  max-height: 50px !important;
+}
+
+#Top_bar .menu > li > a {
+  padding: 10px 0;
+}
+
+#Top_bar #logo {
+  padding: 0 !important;
+}
+
+.header-transparent #Top_bar #logo {
+  height: 100px !important;
+}
+
+.logo-main.scale-with-grid {
+  margin-bottom: 1.8em;
+}
+
+#menu-main-menu {
+  margin-bottom: .7rem !important;
+}
+
+#Top_bar.is-sticky {
+  .top_bar_right {
+    .top_bar_right_wrapper {
+      height: 60% !important;
+    }
+  }
+
+  #menu-main-menu {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 1023.99px) {
+  #Header {
+    padding-left: 1.618em;
+    padding-right: 1.618em;
+  }
+}
