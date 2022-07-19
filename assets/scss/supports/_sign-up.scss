@@ -1,0 +1,40 @@
+/** Sign Up
+--------------------- */
+
+#sign-up-page {
+  h4 {
+    a {
+      color: $white !important;
+    }
+  }
+  .woocommerce-Price-amount.amount, .subscription-details {
+    color: $red;
+  }
+}
+
+#wppb-register-user-casting-director-and-producer,
+#wppb-register-user-actor,
+#wppb-register-user-crew {
+  label {
+    color: $white-smoke;
+  }
+  h4 {
+    color: $white-smoke;
+  }
+  .wppb-description-delimiter {
+    color: $white-smoke;
+  }
+  .submit.button {
+    background: $red;
+    color: $white-smoke;
+    border-radius: 0;
+  }
+  .button.wppb_upload_button {
+    background: $red;
+    color: $white-smoke;
+    border-radius: 0;
+  }
+  .wppb-field-visibility-settings-toggle {
+    color: $white-smoke;
+  }
+}

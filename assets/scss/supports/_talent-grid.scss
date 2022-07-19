@@ -1,8 +1,61 @@
 /** Talent Grid */
+/*
+#wppb-facet-height {
+  width: 38.9%;
+}
+
+#wppb-facet-talent_weight {
+  width: 38.9%;
+}
+
+#wppb-facet-age {
+  width: 38.9%;
+}
+
+#wppb-facet-talent_eye_color {
+  width: 38.9%;
+}
+
+#wppb-facet-ethnicity {
+  width: 38.9%;
+}
+
+#wppb-facet-hair_color_1 {
+  width: 38.9%;
+}
+*/
 
 #card-container {
   .talent-col {
     margin: 1.618em auto;
+  }
+  #wppb-facet-age {
+    width: 25%;
+  }
+  .wppb-faceted-list {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.618em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+
+    li {
+      padding: 10px !important;
+      flex:0 0 30%;
+      max-width: none !important;
+    }
+
+    .select2-search.select2-search--inline {
+      height: 43px;
+    }
+    li:nth-child(1) {
+      flex-basis: 100%;
+    }
+  }
+  #wppb-remove-facets-container {
+    li a {
+      color: $white-smoke !important;
+    }
   }
 }
 
@@ -29,7 +82,8 @@
 }
 
 .wppb-facet-filter.wppb-facet-select,
-.wppb-facet-filter.wppb-facet-range {
+.wppb-facet-filter.wppb-facet-range,
+.wppb-facet-filter.wppb-facet-select_multiple {
   h5 {
     color: $white;
   }
@@ -38,7 +92,6 @@
 
 .wppb-ul-range-values.age {
   color: $white;
-  padding: 0 0 .2em 0;
 }
 
 #wppb-facet-age {
@@ -51,7 +104,7 @@
   margin-left: 1.618em;
 }
 
-.wppb-faceted-list .ui-widget-header {
+.wppb-faceted-list .ui-widget-header, .wppb-ul-slider-range {
   background-color: #6E0218 !important;
   border-color: #6E0218 !important;
 }
