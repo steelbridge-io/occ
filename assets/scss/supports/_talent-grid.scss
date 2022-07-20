@@ -1,5 +1,34 @@
 /** Talent Grid */
 
+#userlisting_pagination {
+  display: flex;
+  justify-content: center;
+  width: 32%;
+  margin: 0 auto;
+  background-color: $red;
+  padding: 1em 2em;
+  color: $white;
+  .selected {
+    width: auto;
+    color: $black;
+  }
+  .page-link {
+    display: inline;
+    width: auto;
+    padding: 0 .3em;
+  }
+  /*.page-link.pageLink_next,
+  .page-link.pageLink_fist {
+    float: left;
+    width: 14%;
+  }
+  .page-link.pageLink_last,
+  .page-link.pageLink_previous {
+    float: right;
+    width: 16%;
+  }*/
+}
+
 #send-private-message {
   display: none !important;
 }

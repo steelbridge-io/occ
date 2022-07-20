@@ -10,6 +10,9 @@
     background: $red;
     color: $white;
     padding: 0.9em 2.691em 0.9em 2.691em;
+    &:hover {
+      color: $white;
+    }
   }
 }
 

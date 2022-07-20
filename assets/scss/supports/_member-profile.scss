@@ -1,5 +1,10 @@
 /** Member Profile */
 
+#notifications-personal-li,
+#forums-personal-li {
+  display: none;
+}
+
 #profile-data {
   margin-bottom: 2.618em;
   h3 {

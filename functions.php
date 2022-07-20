@@ -44,6 +44,8 @@ function mfnch_enqueue_styles()
 
 	wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css', array(), '5.2.0', 'all');
 
+	wp_enqueue_style('material-design-fonts', '//cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css', array(), '5.14.4', false );
+
 	// enqueue the child stylesheet
 
 	wp_dequeue_style('style');
@@ -79,7 +81,9 @@ function wppbc_current_user_link( $atts, $content ) {
 		//$id = get_current_user_id();
 		$user = $current_user->user_login;
 		// make sure to change the URL to represent your setup.
-		return "<a href='https://opencurtains.parsonshosting.dev/members/{$user}'>View Your User Page Here</a>";
+		return "<a href='https://opencurtains.parsonshosting.dev/members/{$user}'><svg style='width:24px;height:24px' viewBox='0 0 24 24'>
+    <path fill='currentColor' d='M6,2H18A2,2 0 0,1 20,4V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V4A2,2 0 0,1 6,2M6,8V16H18V8H6Z' />
+</svg>View Your User Page Here</a>";
 	}
 
 	return ;
@@ -147,3 +151,18 @@ function buddydev_private_message_button_shortcode( $atts, $content = '' ) {
 }
 
 add_shortcode( 'bp-pm-button', 'buddydev_private_message_button_shortcode' );
+
+/**
+ * @return void
+ * Conditionally loads private message access
+ */
+function bp_occ_disable_messaging() {
+	//global $bp;
+	$current_user = wp_get_current_user();
+
+	if ( ! user_can($current_user, 'subscriber' || 'talent_agent' ) && bp_is_current_component('messages') ) {
+		wp_redirect( 'https://opencurtains.parsonshosting.dev/sign-up/' );
+		exit();
+	}
+}
+add_action('wp','bp_occ_disable_messaging');
