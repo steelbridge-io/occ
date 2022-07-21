@@ -66,16 +66,6 @@
   background-color: #b10000;
   padding: 1em 2em;
   color: #fff;
-  /*.page-link.pageLink_next,
-  .page-link.pageLink_fist {
-    float: left;
-    width: 14%;
-  }
-  .page-link.pageLink_last,
-  .page-link.pageLink_previous {
-    float: right;
-    width: 16%;
-  }*/
 }
 #userlisting_pagination .selected {
   width: auto;
@@ -85,6 +75,17 @@
   display: inline;
   width: auto;
   padding: 0 0.3em;
+}
+
+#wppb-facet-imdb_link_directors h5 {
+  color: #f5f5f5;
+}
+#wppb-facet-imdb_link_directors .wppb-facet-search-wrap label {
+  width: 100%;
+}
+#wppb-facet-imdb_link_directors .wppb-facet-search-wrap label .wppb-search-submit {
+  height: auto !important;
+  min-height: 45px;
 }
 
 #send-private-message {
@@ -102,7 +103,6 @@
   padding: 1.618em;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 #card-container .wppb-faceted-list li {
   padding: 10px !important;
@@ -170,6 +170,18 @@
   border-color: #6E0218 !important;
 }
 
+/** max width */
+@media (max-width: 767.98px) {
+  #card-container li.wppb-facet-filter {
+    flex: 0 0 44.5% !important;
+  }
+}
+@media (max-width: 575.98px) {
+  #card-container li.wppb-facet-filter {
+    flex: 0 0 100% !important;
+  }
+}
+/** min width */
 /** Member Profile */
 #notifications-personal-li,
 #forums-personal-li {
