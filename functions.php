@@ -69,7 +69,7 @@ function mfnch_textdomain()
 }
 add_action('after_setup_theme', 'mfnch_textdomain');
 
-/*
+/**
  * Current User link shortcode
  * Use like so: [current_user_link] This is displayed only if current user is logged in.
  */
@@ -166,3 +166,13 @@ function bp_occ_disable_messaging() {
 	}
 }
 add_action('wp','bp_occ_disable_messaging');
+
+/**
+ * Logout redirect
+ */
+add_action('wp_logout','auto_redirect_after_logout');
+
+function auto_redirect_after_logout(){
+	wp_safe_redirect( home_url() );
+	exit;
+}

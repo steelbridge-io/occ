@@ -430,4 +430,9 @@
   background-color: transparent !important;
 }
 
+/** Tabitha Edits Per Ticket #790142  **/
+.top_bar_right_wrapper .action_button.top-bar-right-button {
+  display: none !important;
+}
+
 /*# sourceMappingURL=custom.css.map */
