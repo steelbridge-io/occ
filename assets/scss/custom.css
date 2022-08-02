@@ -259,6 +259,13 @@
   color: #fff !important;
 }
 
+.xprofile.bp-user #casting-call {
+  display: none;
+}
+.xprofile.bp-user.my-account #casting-call {
+  display: block !important;
+}
+
 /** Log In */
 #login-form .login-username,
 #login-form .login-password,

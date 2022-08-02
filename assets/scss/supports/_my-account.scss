@@ -22,3 +22,14 @@
     color: $white !important;
   }
 }
+
+.xprofile.bp-user {
+  #casting-call {
+    display: none;
+  }
+  &.my-account {
+    #casting-call {
+      display: block !important;
+    }
+  }
+}
