@@ -1,5 +1,16 @@
 /** My Account */
 
+#select2-wppb-profile-form-user-to-edit-container {
+  
+}
+
+.select2-selection.select2-selection--single {
+  height: 50px !important;
+  .select2-selection__arrow {
+    margin-top: 10px !important;
+  }
+}
+
 .user-page-link {
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
@@ -32,4 +43,8 @@
       display: block !important;
     }
   }
+}
+
+#wppb-back-span {
+  margin-top: 2em;
 }

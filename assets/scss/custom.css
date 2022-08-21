@@ -238,6 +238,13 @@
 }
 
 /** My Account */
+.select2-selection.select2-selection--single {
+  height: 50px !important;
+}
+.select2-selection.select2-selection--single .select2-selection__arrow {
+  margin-top: 10px !important;
+}
+
 .user-page-link {
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
@@ -264,6 +271,10 @@
 }
 .xprofile.bp-user.my-account #casting-call {
   display: block !important;
+}
+
+#wppb-back-span {
+  margin-top: 2em;
 }
 
 /** Log In */
